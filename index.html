@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#"  onclick="reload()" class="company-logo">
+                <img src="assets/NEWS.io-removebg-preview.png" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-links nav-item" id="international" onclick="onNavItemclick('international')">INTERNATIONAL</li>
+                    <li class="hover-links nav-item" id="sports" onclick="onNavItemclick('sports')">SPORTS</li>
+                    <li class="hover-links nav-item" id="technology" onclick="onNavItemclick('technology')">TECHNOLOGY</li>
+                    <li class="hover-links nav-item" id="economy" onclick="onNavItemclick('economy')">ECONOMY</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" id="news-input" class="news-input" placeholder="Search News.io">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container  flex" id="cards-container">
+
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">THIS IS TITLE</h3>
+                <h6 class="news-source" id="news-source">TSC-1 23/10/2023</h6>
+                <p class="news-decs" id="news-decs">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas magni
+                    quia obcaecati voluptatem et minus, suscipit tenetur molestias id vitae consequuntur quisquam nemo
+                    repudiandae nam architecto ea, porro dolores eligendi.</p>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+
+</html>
